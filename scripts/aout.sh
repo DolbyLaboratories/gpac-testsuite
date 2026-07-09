@@ -21,7 +21,7 @@ sleep 2
 fi
 fi
 
-do_test "$GPAC -i $srcfile aout:drv=$1 $3 -logs=mmio@debug" "play"
+do_test "$GPAC -i $srcfile aout:drv=$1 $3 -logs=mmio@info" "play"
 
 if [ $2 = 1 ] && [ -z "$jdon" ] ; then
 echo "killing jackd" >> $LOGS
